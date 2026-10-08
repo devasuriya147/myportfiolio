@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devasurya M | AI Tech Fullstack Developer</title>
+  
+  <!-- Google Fonts: Bebas Neue for display, Alex Brush for cursive, Syne & Plus Jakarta Sans for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Minimalist loading overlay -->
+  <div id="loader" class="loader">
+    <div class="loader-spinner"></div>
+    <div id="loader-text" class="loader-text">Loading 0%</div>
+  </div>
+
+  <!-- Background Canvas for smooth scroll animation -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Page Content Container overlaying the scroll canvas -->
+  <div id="page-wrapper">
+    
+    <!-- Top Header -->
+    <header class="site-header">
+      <div class="header-left">
+        <span class="role-primary">AI TECH FULLSTACK DEVELOPER</span>
+        <span class="role-secondary">DIGITAL CREATOR</span>
+      </div>
+      <div class="header-right">
+        <a href="#contact" class="available-badge">
+          <span>AVAILABLE FOR PROJECTS</span>
+          <span class="sparkle-icon">+</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <!-- Giant background "PORTFOLIO" display text matching reference -->
+      <div class="hero-bg-title" aria-hidden="true">PORTFOLIO</div>
+
+      <div class="hero-content">
+        <!-- Left Hero Column -->
+        <div class="hero-col-left">
+          <div class="hero-greeting motion-words-container" aria-label="Hello, I'm">
+            <span class="word-wrap word-wrap-1"><span class="motion-word word-hello">Hello,</span></span>
+            <span class="word-wrap word-wrap-2"><span class="motion-word word-im">I'm</span></span>
+          </div>
+          <h1 class="hero-name motion-words-container" aria-label="DEVASURYA M">
+            <span class="word-wrap word-wrap-3"><span class="motion-word word-devasurya">DEVASURYA</span></span>
+            <span class="word-wrap word-wrap-4"><span class="motion-word word-m">M</span></span>
+          </h1>
+          <h2 class="hero-title">AI TECH FULLSTACK DEVELOPER</h2>
+          
+          <p class="hero-desc">
+            I build intelligent digital experiences and scalable fullstack systems that are user-centered, visually engaging and engineered to solve real-world problems. From neural architectures to modern reactive interfaces, I craft software that connects and converts.
+          </p>
+
+          <div class="hero-location">
+            <svg class="location-pin" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            <span>BASED IN INDIA</span>
+          </div>
+        </div>
+
+        <!-- Center space is left open for the animated canvas portrait -->
+        <div class="hero-col-center"></div>
+
+        <!-- Right Hero Column -->
+        <div class="hero-col-right">
+          <div class="feature-callout">
+            <div class="feature-icon-circle">+</div>
+            <p class="feature-callout-text">Turning ideas into powerful digital experiences.</p>
+          </div>
+
+          <ul class="feature-list">
+            <li>
+              <span class="plus-bullet">+</span>
+              <span>AI & Machine Learning Systems</span>
+            </li>
+            <li>
+              <span class="plus-bullet">+</span>
+              <span>Scalable Fullstack Architecture</span>
+            </li>
+            <li>
+              <span class="plus-bullet">+</span>
+              <span>Pixel-Perfect Reactive UI</span>
+            </li>
+            <li>
+              <span class="plus-bullet">+</span>
+              <span>High-Performance APIs & Cloud</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="section-container projects-section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">SELECTED PROJECTS</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: SAFEGATE -->
+        <div class="project-card">
+          <div class="project-preview preview-safegate">
+            <div class="mockup-screen">
+              <div class="mockup-header-bar">
+                <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              </div>
+              <div class="mockup-inner-ui">
+                <span class="mockup-badge">SECURITY SUITE</span>
+                <h4 class="mockup-title">SAFEGATE OS</h4>
+                <div class="mockup-visual-card">
+                  <div class="mockup-icon-shield">🛡️</div>
+                  <div class="mockup-graph-lines">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-text">
+              <h3 class="project-name">SAFEGATE</h3>
+              <p class="project-sub">Society Management App</p>
+              <span class="project-category">AI & Fullstack System</span>
+            </div>
+            <a href="#projects" class="project-link">01 <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 2: Event Ticket Booking -->
+        <div class="project-card">
+          <div class="project-preview preview-event">
+            <div class="mockup-screen">
+              <div class="mockup-header-bar">
+                <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              </div>
+              <div class="mockup-inner-ui">
+                <span class="mockup-badge">TICKETING</span>
+                <h4 class="mockup-title">NEBULA PASS</h4>
+                <div class="mockup-ticket-pass">
+                  <div class="ticket-barcode">||| | |||| | ||</div>
+                  <div class="ticket-status">CONFIRMED</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-text">
+              <h3 class="project-name">Event Ticket Booking</h3>
+              <p class="project-sub">Event Ticket Booking App</p>
+              <span class="project-category">Fullstack Platform</span>
+            </div>
+            <a href="#projects" class="project-link">02 <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 3: LOOPIN -->
+        <div class="project-card">
+          <div class="project-preview preview-loopin">
+            <div class="mockup-screen">
+              <div class="mockup-header-bar">
+                <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              </div>
+              <div class="mockup-inner-ui">
+                <span class="mockup-badge">INSIGHT TO INTERFACE</span>
+                <h4 class="mockup-title">LOOPIN AUDIO</h4>
+                <div class="mockup-audio-wave">
+                  <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                  <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-text">
+              <h3 class="project-name">LOOPIN</h3>
+              <p class="project-sub">Music Streaming App</p>
+              <span class="project-category">AI Audio & Web</span>
+            </div>
+            <a href="#projects" class="project-link">03 <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 4: Website Landing Page -->
+        <div class="project-card">
+          <div class="project-preview preview-landing">
+            <div class="mockup-screen">
+              <div class="mockup-header-bar">
+                <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              </div>
+              <div class="mockup-inner-ui">
+                <span class="mockup-badge">SAAS PLATFORM</span>
+                <h4 class="mockup-title">SYNAPSE AI</h4>
+                <div class="mockup-dashboard-grid">
+                  <div class="dash-tile"></div>
+                  <div class="dash-tile"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-text">
+              <h3 class="project-name">Website Landing Page</h3>
+              <p class="project-sub">Website Landing Page</p>
+              <span class="project-category">Modern Frontend</span>
+            </div>
+            <a href="#projects" class="project-link">04 <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education, Skills, Process & Quote 3-Column Section -->
+    <section class="section-container info-section" id="about">
+      <div class="info-grid">
+        
+        <!-- Column 1: Education & Skills -->
+        <div class="info-col education-col">
+          <h2 class="col-main-title">EDUCATION & SKILLS</h2>
+
+          <!-- Education block -->
+          <div class="sub-block">
+            <h3 class="sub-heading-red">EDUCATION</h3>
+            
+            <div class="edu-item">
+              <div class="edu-header">
+                <span class="edu-degree">B.Tech in Artificial Intelligence & Data Science</span>
+                <span class="edu-year">2022-26</span>
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-header">
+                <span class="edu-degree">AI & Fullstack Development Certificate</span>
+                <span class="edu-year">2023-25</span>
+              </div>
+              <p class="edu-details">
+                Deep Learning Architecture | Fullstack Engineering | Scalable Microservices | Responsive Web
+              </p>
+            </div>
+          </div>
+
+          <!-- Skills block -->
+          <div class="sub-block">
+            <h3 class="sub-heading-red">SKILLS</h3>
+            
+            <div class="skills-cloud">
+              <span class="skill-pill">AI & ML</span>
+              <span class="skill-pill">PYTHON</span>
+              <span class="skill-pill">PYTORCH</span>
+              <span class="skill-pill">TYPESCRIPT</span>
+              <span class="skill-pill">REACT JS</span>
+              <span class="skill-pill">NEXT.JS</span>
+              <span class="skill-pill">NODE.JS</span>
+              <span class="skill-pill">FASTAPI</span>
+              <span class="skill-pill">DOCKER</span>
+              <span class="skill-pill">POSTGRESQL</span>
+              <span class="skill-pill">MONGODB</span>
+              <span class="skill-pill">SYSTEM DESIGN</span>
+              <span class="skill-pill">REST & GRAPHQL</span>
+              <span class="skill-pill">TAILWIND CSS</span>
+              <span class="skill-pill">WEB ANIMATION</span>
+              <span class="skill-pill">GIT & CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Work Process -->
+        <div class="info-col process-col">
+          <h2 class="col-main-title">WORK PROCESS</h2>
+
+          <div class="process-timeline">
+            <!-- Step 1 -->
+            <div class="process-step">
+              <div class="step-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h4 class="step-name">Discover</h4>
+                <p class="step-desc">Research & Analysis</p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step">
+              <div class="step-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h4 class="step-name">Plan</h4>
+                <p class="step-desc">Architecture & System Flow</p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step">
+              <div class="step-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h4 class="step-name">Design</h4>
+                <p class="step-desc">High-Fidelity Interface</p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step">
+              <div class="step-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h4 class="step-name">Build</h4>
+                <p class="step-desc">Fullstack & AI Integration</p>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="process-step">
+              <div class="step-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 20h9"/>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h4 class="step-name">Refine</h4>
+                <p class="step-desc">Testing & Optimization</p>
+              </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="process-step">
+              <div class="step-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h4 class="step-name">Deliver</h4>
+                <p class="step-desc">Cloud Deployment & Scale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Quote & Callout -->
+        <div class="info-col quote-col">
+          <div class="quote-card">
+            <div class="quote-symbol">“</div>
+            <p class="quote-body">
+              Good code is not just how it functions, but how it scales.
+            </p>
+            <div class="quote-author-signature">Devasurya M</div>
+            
+            <div class="quote-footer-cta">
+              <h4 class="cta-title">LET'S CREATE SOMETHING GREAT TOGETHER.</h4>
+              <span class="cta-sparkle">+</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Let's Work Together / Contact Section -->
+    <section class="section-container contact-section" id="contact">
+      <div class="contact-grid">
+        
+        <!-- Left: CTA Details -->
+        <div class="contact-col-left">
+          <h2 class="contact-main-heading">
+            LET'S WORK<br>TOGETHER <span class="contact-sparkle">✦</span>
+          </h2>
+          <p class="contact-subtext">
+            I'm currently open for new opportunities and collaborations. Let's create something amazing that brings results.
+          </p>
+          <a href="mailto:devasurya.m@gmail.com" class="freelance-badge">
+            <span class="arrow-circle">→</span>
+            <span>AVAILABLE FOR FREELANCE</span>
+          </a>
+        </div>
+
+        <!-- Middle: Social & Contact Links -->
+        <div class="contact-col-middle">
+          <ul class="contact-links-list">
+            <li>
+              <a href="mailto:devasurya.m@gmail.com" class="contact-link-item">
+                <div class="contact-circle-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <span>devasurya.m@gmail.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/devasurya-m" target="_blank" rel="noopener" class="contact-link-item">
+                <div class="contact-circle-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <span>github.com/devasurya-m</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com/in/devasurya-m" target="_blank" rel="noopener" class="contact-link-item">
+                <div class="contact-circle-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <span>linkedin.com/in/devasurya-m</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://devasurya.dev" target="_blank" rel="noopener" class="contact-link-item">
+                <div class="contact-circle-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <span>https://devasurya.dev</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Laptop Showcase Mockup -->
+        <div class="contact-col-right">
+          <div class="laptop-showcase">
+            <div class="laptop-screen">
+              <div class="laptop-screen-content">
+                <div class="mini-hero-bg">PORTFOLIO</div>
+                <div class="mini-hero-avatar"></div>
+                <div class="mini-hero-text">
+                  <span>DEVASURYA M</span>
+                  <small>AI TECH FULLSTACK</small>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base">
+              <div class="laptop-notch"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Direct WhatsApp Project Inquiry Form -->
+      <div class="project-inquiry-box" id="inquiry-form">
+        <div class="inquiry-header">
+          <div class="inquiry-badge">
+            <span class="inquiry-badge-dot"></span>
+            <span>DIRECT INQUIRY INTEGRATION</span>
+          </div>
+          <h3 class="inquiry-title">LET'S BUILD SOMETHING EXTRAORDINARY</h3>
+          <p class="inquiry-subtitle">
+            Share your project requirements, choose your domain, and connect directly with me on WhatsApp for immediate discussion.
+          </p>
+        </div>
+
+        <form id="whatsapp-contact-form" class="inquiry-form" novalidate>
+          <div class="form-grid">
+            
+            <!-- Full Name -->
+            <div class="form-field-group">
+              <label for="contact-name" class="form-field-label">
+                YOUR NAME <span class="required-indicator">*</span>
+              </label>
+              <div class="input-container">
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="custom-input" 
+                  placeholder="e.g. Alex Morgan" 
+                  required
+                >
+                <div class="input-focus-line"></div>
+              </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-field-group">
+              <label for="contact-phone" class="form-field-label">
+                PHONE / WHATSAPP NUMBER <span class="required-indicator">*</span>
+              </label>
+              <div class="input-container">
+                <input 
+                  type="tel" 
+                  id="contact-phone" 
+                  name="phone" 
+                  class="custom-input" 
+                  placeholder="+91 98765 43210" 
+                  required
+                >
+                <div class="input-focus-line"></div>
+              </div>
+            </div>
+
+            <!-- Domain Selection -->
+            <div class="form-field-group form-field-full">
+              <label for="contact-domain" class="form-field-label">
+                SELECT DOMAIN / PROJECT TYPE <span class="required-indicator">*</span>
+              </label>
+              <div class="input-container select-container">
+                <select id="contact-domain" name="domain" class="custom-select" required>
+                  <option value="" disabled selected>Select your project domain...</option>
+                  <option value="AI & Machine Learning Solutions">🤖 AI & Machine Learning Solutions</option>
+                  <option value="Fullstack Web Application">💻 Fullstack Web Application Development</option>
+                  <option value="Mobile App Development">📱 Mobile App Development (iOS / Android)</option>
+                  <option value="UI/UX & Interactive Design">🎨 UI/UX & Interactive Web Design</option>
+                  <option value="Cloud, DevOps & Scalability">☁️ Cloud, DevOps & Scalability</option>
+                  <option value="System Architecture Consultation">💡 System Architecture Consultation</option>
+                  <option value="Custom Project">⚡ Other Custom Project</option>
+                </select>
+                <svg class="select-arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+                <div class="input-focus-line"></div>
+              </div>
+            </div>
+
+            <!-- Project Detailed Description -->
+            <div class="form-field-group form-field-full">
+              <label for="contact-details" class="form-field-label">
+                PROJECT DETAILED DESCRIPTION <span class="required-indicator">*</span>
+              </label>
+              <div class="input-container">
+                <textarea 
+                  id="contact-details" 
+                  name="details" 
+                  class="custom-textarea" 
+                  rows="4" 
+                  placeholder="Share details about your project goals, scope, features, expected timelines, or deliverables..." 
+                  required
+                ></textarea>
+                <div class="input-focus-line"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Form Action / WhatsApp CTA -->
+          <div class="form-action-row">
+            <div class="form-privacy-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>Direct 1-to-1 WhatsApp connection. Fast response.</span>
+            </div>
+
+            <button type="submit" id="whatsapp-submit-btn" class="whatsapp-submit-btn">
+              <svg class="whatsapp-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/>
+              </svg>
+              <span>CONNECT VIA WHATSAPP</span>
+              <span class="btn-arrow-symbol">→</span>
+            </button>
+          </div>
+
+          <!-- Interactive Live Feedback Box -->
+          <div id="form-feedback" class="form-feedback-banner" style="display: none;"></div>
+        </form>
+      </div>
+
+    <!-- Footer Copyright -->
+    <footer class="site-footer">
+      <p>© 2026 Devasurya M. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
